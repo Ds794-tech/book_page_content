@@ -5,6 +5,7 @@ import tailwindcss from '@tailwindcss/vite'
 // https://vite.dev/config/
 export default defineConfig({
   plugins: [tailwindcss(), react()],
+  base: 'https://book-page-content-rho.vercel.app/', // Set this to your repository name if deploying to GitHub Pages
   build: {
     rollupOptions: {
       output: {
